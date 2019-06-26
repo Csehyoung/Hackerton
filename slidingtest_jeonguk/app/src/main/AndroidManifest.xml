@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.bfop.kftc.com.useorgsampleapprenewal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:name="and.bfop.kftc.com.useorgsampleapprenewal.App"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="and.bfop.kftc.com.useorgsampleapprenewal.layout.SildingActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="and.bfop.kftc.com.useorgsampleapprenewal.layout.userInfo.SignupActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="and.bfop.kftc.com.useorgsampleapprenewal.layout.Mainlogin"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="and.bfop.kftc.com.useorgsampleapprenewal.layout.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!-- 오픈플랫폼앱에서 이 앱을 호출하기 위한 스키마 정의 -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="result"
+                    android:scheme="bfoptest" />
+            </intent-filter>
+            <!-- // 오픈플랫폼앱에서 이 앱을 호출하기 위한 스키마 정의 -->
+
+        </activity>
+
+        <receiver android:name="and.bfop.kftc.com.useorgsampleapprenewal.receiver.CustomReceiver">
+            <intent-filter android:priority="9999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

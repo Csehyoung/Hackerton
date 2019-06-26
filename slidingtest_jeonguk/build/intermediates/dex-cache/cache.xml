@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Android_Avd_Gradle\.android\build-cache\9be4393eaca771a0c1f8d2d4402b97be7bf6c095\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ee07783aa59eefdeacc107abf472f45f60272302">
+        <dex dex="C:\Users\uk7880\Desktop\slidingtest_jeonguk\app\build\intermediates\pre-dexed\debug\classes_4bc7b4c26eda4a5eb5f16f7e6147bb7301a37349.jar" />
+    </item>
+
+</items>

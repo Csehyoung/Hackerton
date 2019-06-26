@@ -1,0 +1,232 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent" >
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:tag="buttonParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <!-- ConstraintLayout 안에 TableLayout을 넣어 보았다 -->
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+            <TextView
+                style="@style/FormLabel02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:gravity="center_vertical|end"
+                android:text="호출 서버 : " />
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rgSvr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="7"
+                >
+                <RadioButton
+                    style="@style/FormLabel02"
+                    android:id="@+id/radioSvr_TEST"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="테스트서버"
+                    android:onClick="onRadioSvrClicked"/>
+                <RadioButton android:id="@+id/radioSvr_PRD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="운영서버"
+                    android:onClick="onRadioSvrClicked"/>
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+            <TextView
+                style="@style/FormLabel02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical|end"
+                android:longClickable="true"
+                android:textIsSelectable="true"
+                android:text="App Key : " />
+            <EditText
+                style="@style/FormValue02"
+                android:id="@+id/etAppKey"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip">
+
+            <TextView
+                style="@style/FormLabel02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical|end"
+                android:text="App Secret : " />
+            <EditText
+                style="@style/FormValue02"
+                android:id="@+id/etAppSecret"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:textSize="16dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                style="@style/FormLabel02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical|end"
+                android:text="Callback URL   \n(via Web) : " />
+            <EditText
+                style="@style/FormValue02"
+                android:id="@+id/etWebCallbackUrl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:gravity="fill_vertical"
+                android:textSize="16dp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="317dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:text="콜백 주소는 '개발자사이트'➝'마이페이지'➝'내 앱 관리' 에서 설정하신 콜백 주소와 일치하여야 합니다."
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout1" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_marginTop="7dp">
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dip"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                style="@style/FormLabel02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center_vertical|end"
+                android:text="Scope    \n(기존버전용) : " />
+
+            <Spinner
+                android:id="@+id/spScope"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="7" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="317dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dp"
+        android:text="사용자인증 개선버전 호출시의 Scope는 각 페이지에서 직접 설정합니다."
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+
+    <!--======================== 저장/초기화 버튼 ========================-->
+    <Button
+        android:id="@+id/btnSaveSettings"
+        style="@style/Button03"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        android:text="저장"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnResetSettings"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2" />
+
+    <Button
+        android:id="@+id/btnResetSettings"
+        style="@style/Button03"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="초기화"
+        app:layout_constraintLeft_toRightOf="@+id/btnSaveSettings"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnSaveSettings"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="10dp" />
+    <!--//======================== 저장/초기화 버튼 ========================-->
+
+
+    <!--================== 세션쿠키(웹로그인정보) 제거 버튼 ==================-->
+    <Button
+        android:id="@+id/btnRemoveSession"
+        style="@style/Button03"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:text="세션쿠키(웹로그인정보) 제거"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSaveSettings"
+        app:layout_constraintVertical_bias="0.0" />
+    <!--//================== 세션쿠키(웹로그인정보) 제거 버튼 ==================-->
+
+</android.support.constraint.ConstraintLayout>
+
+</ScrollView>

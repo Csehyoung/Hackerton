@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:support-media-compat:25.3.1@aar">
+    <ANNOTATIONS>
+      <root url="jar://C:/Android_Avd_Gradle/.android/build-cache/fb72bb45b6c5bea11aef039aea5841354311f9fb/output/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://C:/Android_Avd_Gradle/.android/build-cache/fb72bb45b6c5bea11aef039aea5841354311f9fb/output/jars/classes.jar!/" />
+      <root url="file://C:/Android_Avd_Gradle/.android/build-cache/fb72bb45b6c5bea11aef039aea5841354311f9fb/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://C:/Android_SDK/extras/android/m2repository/com/android/support/support-media-compat/25.3.1/support-media-compat-25.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

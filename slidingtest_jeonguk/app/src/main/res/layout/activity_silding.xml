@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.ramotion.foldingcell.FoldingCell
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/folding_cell1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                ​
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/folding_cell_social_media" />
+                ​
+                <FrameLayout
+                    android:id="@+id/social_media_title_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:src="@drawable/myprofile_title_view"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/sns_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="소셜 미디어"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        />
+                </FrameLayout>
+                ​
+            </com.ramotion.foldingcell.FoldingCell>
+
+            <com.ramotion.foldingcell.FoldingCell
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/folding_cell2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                ​
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/folding_cell_telecom" />
+                ​
+                <FrameLayout
+                    android:id="@+id/telecom_title_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:src="@drawable/telecom_title_view"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/telecom_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="통신사 등급"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        />
+                </FrameLayout>
+                ​
+            </com.ramotion.foldingcell.FoldingCell>
+
+            <com.ramotion.foldingcell.FoldingCell
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/folding_cell3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                ​
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/folding_cell_bank_book" />
+                ​
+                <FrameLayout
+                    android:id="@+id/bank_book_title_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:src="@drawable/bank_title_view"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/bank_book_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="계좌 내역"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        />
+                </FrameLayout>
+                ​
+            </com.ramotion.foldingcell.FoldingCell>
+
+            <com.ramotion.foldingcell.FoldingCell
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/folding_cell4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                ​
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/folding_cell_call_list" />
+                ​
+                <FrameLayout
+                    android:id="@+id/call_list_title_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:src="@drawable/list_title_view"
+                        android:scaleType="fitXY"/>
+
+                    <TextView
+                        android:id="@+id/call_list_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="통화 내역"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        />
+                </FrameLayout>
+                ​
+            </com.ramotion.foldingcell.FoldingCell>
+
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+
+</LinearLayout>
+
+

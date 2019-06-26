@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFFAFA"
+    android:id="@+id/test">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.65"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:background="@color/red">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageButton
+                        android:id="@+id/btnInqrBlncPage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/balance"
+                        android:adjustViewBounds="true"
+                        android:background="@color/red"
+                        android:padding="8dp"
+                        android:tint="@color/white"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/btnInqrBlncPage1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="잔액조회"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/btnInqrBlncPage" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.65"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:background="@color/yellow">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageButton
+                        android:id="@+id/btnInqrTranRecPage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/transaction_history"
+                        android:adjustViewBounds="true"
+                        android:tint="@color/white"
+                        android:background="@color/yellow"
+                        android:padding="8dp"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/btnInqrBlncPage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="거래내역조회"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/btnInqrTranRecPage"
+
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.45"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:background="@color/lime">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageButton
+                        android:id="@+id/btnInqrRealNamePage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/bank_book"
+                        android:adjustViewBounds="true"
+                        android:tint="@color/white"
+                        android:background="@color/lime"
+                        android:padding="8dp"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/btnInqrBlncPage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="거래실명조회"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/btnInqrRealNamePage"
+
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.65"
+
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:background="@color/grenn">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageButton
+                        android:id="@+id/btnTrnsDP2Page"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/deposit"
+                        android:adjustViewBounds="true"
+                        android:tint="@color/white"
+                        android:background="@color/grenn"
+                        android:padding="8dp"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/btnInqrBlncPage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="입금이체"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/btnTrnsDP2Page"
+
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.65"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:background="@color/violet">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageButton
+                        android:id="@+id/btnTrnsWDPage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/withdraw"
+                        android:adjustViewBounds="true"
+                        android:background="@color/violet"
+                        android:tint="@color/white"
+                        android:padding="8dp"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/btnInqrBlncPage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="출금이체"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/btnTrnsWDPage"
+
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.65"
+
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:background="@color/darkblue">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageButton
+                        android:id="@+id/btnInqrUserInfoPage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/user"
+                        android:adjustViewBounds="true"
+                        android:background="@color/darkblue"
+                        android:padding="8dp"
+                        android:tint="@color/white"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/btnInqrBlncPage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="사용자정보조회"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/btnInqrUserInfoPage"
+
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.55"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:background="@color/darkviolet">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageButton
+                        android:id="@+id/btnInqrBlncPage7"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/balance"
+                        android:adjustViewBounds="true"
+                        android:background="@color/darkviolet"
+                        android:tint="@color/white"
+                        android:padding="8dp"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/btnInqrBlncPage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="잔액조회"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/btnInqrBlncPage7"
+
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="0.65"
+
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="match_parent"
+                android:background="@color/yellow">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageButton
+                        android:id="@+id/btnInqrBlncPage8"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/transaction_history"
+                        android:adjustViewBounds="true"
+                        android:background="@color/yellow"
+                        android:tint="@color/white"
+                        android:padding="8dp"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:id="@+id/btnInqrBlncPage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="거래내역조회"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/btnInqrBlncPage8"
+
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

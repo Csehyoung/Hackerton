@@ -1,0 +1,120 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarSize">45dp</item>
+        <!-- 액션바 높이 -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- 버튼 스타일 (메인) -->
+    <style name="ButtonMain">
+        <item name="android:textColor">#F8F8F8</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:minWidth">200dp</item>
+        <item name="android:minHeight">45dp</item>
+        <item name="android:background">@drawable/button_shape_main</item>
+    </style>
+
+    <!-- 버튼 스타일 (메인-Deprecated) -->
+    <style name="ButtonMainDeprecated">
+        <item name="android:textColor">#BBBBBB</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:minWidth">200dp</item>
+        <item name="android:minHeight">45dp</item>
+        <item name="android:background">@drawable/button_shape_03</item>
+    </style>
+
+    <!-- 버튼 스타일 (타입 01) -->
+    <style name="Button01">
+        <item name="android:textColor">#F8F8F8</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:minWidth">200dp</item>
+        <item name="android:minHeight">45dp</item>
+        <item name="android:background">@drawable/button_shape_01</item>
+    </style>
+
+    <!-- 버튼 스타일 (타입 02) -->
+    <style name="Button02">
+        <item name="android:textColor">#F8F8F8</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:minWidth">200dp</item>
+        <item name="android:minHeight">45dp</item>
+        <item name="android:background">@drawable/button_shape_02</item>
+    </style>
+
+    <!-- 버튼 스타일 (타입 03) -->
+    <style name="Button03">
+        <item name="android:textColor">#F8F8F8</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/button_shape_03</item>
+    </style>
+
+    <!-- 버튼 스타일 (주소창 옆 접음/펼침 버튼) -->
+    <style name="ButtonFold">
+        <item name="android:textColor">#F8F8F8</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:background">@drawable/button_shape_fold</item>
+    </style>
+
+    <!-- 네비게이션 메뉴 스타일 -->
+    <style name="NavMenu">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#222222</item>
+    </style>
+
+    <!-- 폼데이터 라벨 (타입 01) -->
+    <style name="FormLabel01">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#222222</item>
+    </style>
+
+    <!-- 폼데이터 값 (타입 02) -->
+    <style name="FormValue01">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#222222</item>
+    </style>
+
+    <!-- 폼데이터 라벨 (타입 02) -->
+    <style name="FormLabel02">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#222222</item>
+    </style>
+
+    <!-- 폼데이터 값 (타입 02) -->
+    <style name="FormValue02">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#222222</item>
+    </style>
+
+    <!-- TextView (API호출결과 Dialog) -->
+    <style name="TextViewAPIResult">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#444444</item>
+    </style>
+
+</resources>

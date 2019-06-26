@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 메뉴간 구분선을 위해서 group을 지어 주었음 -->
+    <group
+        android:id="@+id/menu_01"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_authNew"
+            android:title="사용자인증"/>
+    </group>
+
+    <group
+        android:id="@+id/menu_02"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_APICall"
+            android:title="거래기능" />
+    </group>
+
+    <group
+        android:id="@+id/menu_03"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_setting"
+            android:title="설정" />
+        <item
+            android:id="@+id/nav_oss_license"
+            android:title="오픈소스 라이선스" />
+    </group>
+
+    <group
+        android:id="@+id/menu_04"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_off"
+            android:title="종료" />
+    </group>
+
+
+    <!-- 소제목 있는 메뉴그룹 샘플 -->
+<!--    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>
